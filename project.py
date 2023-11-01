@@ -26,7 +26,7 @@ class CoinGeckoApp:
         label.pack(pady=10)
 
         # Using ttk.Combobox for a dropdown-like combobox with autocompletion
-        self.crypto_combobox = ttk.Combobox(self.root, values=self.get_crypto_symbols())
+        self.crypto_combobox = ttk.Entry(self.root)
         self.crypto_combobox.pack(pady=10)
 
         # Modern-style Button for fetching and displaying data
